@@ -1,0 +1,22 @@
+ import React from 'react'
+ import { useState } from 'react'
+ const App = () => {
+   const[title,settitle] = useState(" ")
+   const[text, setText]=useState("")
+   function fun(e){
+     settitle(e.target.value)
+   }
+   function dta(){
+     setText(title)
+     settitle("")
+   }
+   return (
+     <div>
+       <h2>{text}</h2>
+       <input type="text" value={title} onChange={fun} />
+       <button onClick={dta}>click Me</button>
+       </div>
+   )
+ }
+
+ export default App
