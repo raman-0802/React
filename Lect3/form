@@ -1,0 +1,18 @@
+import Form from 'react'
+import "./App.css"
+const form = () => {
+  return (
+    <div id="body">
+      <form id="form">
+        <input type="text" placeholder="Enter your name"/>
+        <br/>
+        <input type="text" placeholder='Enter your email'/>
+        <br/>
+        <input type="text" placeholder='Enter your password'/>
+        <br/>
+        <button>Submit</button>
+        </form>
+    </div>
+)
+}
+export default form
